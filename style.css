@@ -16,10 +16,13 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'League Spartan', sans-serif;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
 }
 
 .card{
-    width: 1200px;
+    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,12 +34,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .upper-part{
     width: 100%;
-    height: 50%;
+    height: 30%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +47,7 @@ body{
 }
 
 .info{
-    width: 65%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,30 +55,30 @@ body{
 }
 
 .info h1{
-    width:500px;
-    font-size: 60px;
+    width:100%;
+    font-size: 55px;
     color: var(--Very-Dark-Magenta);
     font-weight: 700;
     line-height: 50px;
     letter-spacing: -1px;
-    margin: .5rem;
+    margin: .5rem 0;
 }
 
 .info p{
-    font-size: 20px;
-    width: 500px;
-    line-height: 20px;
+    font-size: 18px;
+    width: 100%;
     color: var(--Dark-Grayish-Magenta);
     font-weight: 500;
-    line-height: 25px;
+    line-height: 25px; 
 }
 
 .ratings{
-    width: 35%;
+    width: 40%;
     height: 280px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 17px;
+    justify-content: center;
 }
 
 .rating{
@@ -86,7 +89,7 @@ body{
     /* justify-content: center; */
     gap: 2rem;
     align-items: center;
-    justify-content:center ;
+    padding: 2px 0 2px 30px;
     width: 100%;
     background-color: var(--Light-Grayish-Magenta);
     border-radius: .5rem;
@@ -103,6 +106,11 @@ body{
 .rating:nth-child(3){
     position: relative;
     right: 30px;
+}
+
+.stars{
+    gap: 8px;
+    display: flex;
 }
 
 .rating p{
@@ -138,7 +146,7 @@ body{
     width: 330px;
     background-color: var(--Very-Dark-Magenta);
     border-radius: .5rem;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
 }
 
 .comments .comment:nth-child(1){
@@ -190,8 +198,8 @@ body{
 .text{
     color: var(--White);
     line-height: 22px;
+    font-weight: 500;
     /* line-break: anywhere; */
-    letter-spacing: 1px;
 }
 
 .attribution {
